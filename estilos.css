@@ -1,0 +1,1244 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --pink:#e84393;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /*Sirve para aplicar bien el padding*/
+    text-decoration: none;   /*Quita la linea de los enlaces*/
+    list-style: none;        /*Quita la bolitas de las listas*/
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ /*BARRA DE NAVEGACION*/
+
+.header {
+
+    background-image: linear-gradient(
+        rgba(75, 72, 72, 0.7),
+        rgba(80, 83, 43, 0.7)),           /*Nos ayuda a ponerle un color obscuro a las imagenes*/
+        url(img/25.png);
+    background-position: center bottom;        /*Centrar la imagen*/
+    background-repeat: no-repeat;              /*No se repita la imagen de fondo*/
+    background-size: cover;                    /*Cubre todo el ancho y altura*/
+    min-height: 90vh;                          /*Tamaño del header*/
+    display: flex;                             
+    align-items: center;                       /*Centra todo el contenido*/
+}
+
+.menu{
+
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* .navbar{ */
+
+    
+/* } */
+
+.menu .navbar ul li{
+
+    position: relative;
+    float: left;            /*El menu flota a la derecha*/
+}   
+
+.menu .navbar ul li a{
+
+    font-size: 12pxpx;
+    padding: 15px;
+    color: #FFFDFC;
+    display: block;        /*El padding se coloque correctamente*/ 
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+
+    color: #CE967B;
+}
+
+#menu{
+
+    display: none;  /*Ocultamos el imput*/
+}
+
+.menu-icono{
+
+    width: 25px;
+}
+
+.menu label {
+
+    cursor:pointer;
+    display: none;  /*Ocultarlo hasta que sea responsibo*/
+}
+
+ /*Contenido adentro del header*/
+
+.header-content{
+
+    text-align: center; /*Centrando todos los elementos*/
+}
+
+.header-content h1{
+
+    font-size: 75px;
+    line-height: 80px;  /*Altura de la letra*/
+    color: #F9FAFC;
+    text-transform: uppercase;  /*Trasnforma el texto a masyusculas*/
+    margin-bottom: 35px;  /*Separacion hacia abajo*/
+}
+
+.header-content p{
+
+    font-size: 16px;
+    color: #F9FAFC;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1{
+
+    display: inline-block; /*El texto se convierte a block, se puede aplicar mejor el padding y el margin*/
+    padding: 11px 33px;
+    background-color: #CE967B;
+    color: #F9FAFC;
+    text-transform: uppercase; /*Masyusculas*/
+}
+
+.btn-1:hover{
+
+    background-color: #c06b41;
+}
+
+/*Seccion de artistas*/
+
+.artistas{
+
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative; /*Acomodar la imagen*/
+
+}
+
+.artistas-content{
+
+    text-align: center;
+}
+
+.artistas-content h2{
+
+    font-size: 55px;
+    line-height:70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p{
+
+    font-size: 16px;
+    color:#414447;
+    padding: 0 250px;
+    margin-bottom: 35px; /*Es una separacion hacia abajo*/
+}
+
+.artistas-grupo{
+
+    display: flex; /*Para que los elementos se coloquen delante*/
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.artista-1{
+
+    padding: 0 25px;
+    justify-content: center;
+}
+
+
+.artista-1 img{
+
+    width: 200px;
+    justify-content: center;
+    
+}
+
+.artistas-img{
+
+    position: absolute;
+    top: 0;
+    right:0;
+    
+}
+
+/*Seccion de servicios*/
+
+.servicios {
+
+    background-image: linear-gradient(
+        rgba(75, 72, 72, 0.7),
+        rgba(80, 83, 43, 0.7)),          /*Nos ayuda a ponerle un color obscuro a las imagenes*/
+        url(img/David-Bowie-paintings-selfportrait4.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+.servicios-content{
+
+    text-align: center;
+}
+
+.servicios-content h2{
+
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.servicios-content p{
+
+    font-size: 16px;
+    color: #F9FAFC;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.servicios-grupo{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.servicios-1{
+
+    padding: 0 100px;
+}
+
+.servicios-1 img{
+
+    width: 75px;
+    margin-bottom: 15px;
+}
+
+.servicios-1 h3{
+
+    color: #F9FAFC;
+    font-size: 18px;
+}
+
+/*Seccion de las colecciones*/
+
+.obras{
+
+    display: flex;  
+}
+
+.obras-1{
+
+    width: 50%;
+    padding: 100px 100px 100px 100px;
+    background-color: #e1e2e6;
+}
+
+.obras-2{
+
+    background-image:url(img/arte201901251.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.obras-3{
+
+    background-image:url(img/remedios-varo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.obras-1 h2{
+
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.obras-1 p{
+
+    font-size: 16px;
+    color: #050505;
+    margin: 25px 0 45px 0;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+/*Estilos de lista de productos*/
+
+.productos{
+    background-color: #e1e2e6;
+}
+
+.productos h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+.productos .box-container{
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    background: #fff;
+}
+
+.productos .box-container .box{
+    flex: 5rem;
+    box-shadow: 0 .5rem 1.5rem rgba( 0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba( 0,0,0,.1);
+    position: relative;
+}
+
+.productos .box-container .box .descuento{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: var(--pink);
+    background: rgba( 255,51,153,.05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+.productos .box-container .box .imagen{
+    position: relative;
+    text-align: center;
+    padding-top: 5rem;
+    overflow: hidden;
+   
+}
+.productos .box-container .box .imagen img{
+    height: 20rem;
+   
+  
+}
+
+.productos .box-container .box:hover .imagen img{
+    transform: scale(1.1);
+}
+.productos .box-container .box .imagen .iconos{
+    position: absolute;
+    bottom:-7rem; left: 0; right: 0;
+    display: flex;
+}
+
+
+.productos .box-container .box:hover .imagen .iconos{
+    bottom: 0;
+}
+
+.productos .box-container .box .imagen .iconos a{
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    width: 50%;
+    background: var(--pink);
+    color: #fff;
+}
+.productos .box-container .box .imagen .iconos .cart-btn{
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width: 100%;
+}
+.productos .box-container .box .imagen .iconos a:hover{
+    background: #333;
+}
+
+.productos .box-container .box .contenido{
+    padding: 2rem;
+    text-align: center;
+}
+.productos .box-container .box .contenido h3{
+    font-size: 2.0rem;
+    color: #333;
+}
+.productos .box-container .box .contenido .precio{
+    font-size: 2.5rem;
+    color: #1d3557;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.productos .box-container .box .contenido .precio span{
+    font-size: 1.5rem;
+    color: #A8DACD;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+
+
+
+.servicios-2 {
+
+    background-image: linear-gradient(
+        rgba(75, 72, 72, 0.7),
+        rgba(80, 83, 43, 0.7)),          /*Nos ayuda a ponerle un color obscuro a las imagenes*/
+        url(img/Diseño\ sin\ título\ \(7\).png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+.contactos{
+
+    padding: 100px;
+    text-align: center;
+    background-color:  #e1e2e6;
+}
+
+.contactos h2{
+
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tacto-content{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.tacto-1{
+
+    padding: 15px 55px;
+}
+
+.tacto-1 img{
+
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.tacto-1 h3{
+
+    font-size: 25px;
+    color: #050505;   
+}
+
+.tacto-1 p{
+
+    font-size: 16px;
+    color: #050505;
+    margin: 25px 0 45px 0;
+    text-align: center; 
+}
+
+/*Seccion de contacto*/
+
+
+.contacto{
+    color: #fff;
+    background-image: linear-gradient(
+        rgba(75, 72, 72, 0.7),
+        rgba(80, 83, 43, 0.7)),          /*Nos ayuda a ponerle un color obscuro a las imagenes*/
+        url(img/my-foolish-heart-1992.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 20px;
+
+}
+.contacto .contenido-seccion{
+    max-width: 800px;
+    margin: auto;
+}
+
+.contacto .contenedor-titulo{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.contacto .contenedor-titulo .info h2{
+    font-size: 3rem;
+    margin-left: 30px;
+}
+
+.contacto .fila{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.contacto .fila .col{
+    width: 48%;
+}
+
+.contacto .fila input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+}
+
+.contacto textarea{
+    display: block;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    outline: none;
+    width: 100%;
+    height: 200px;
+}
+
+.contacto .fila-datos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contacto button{
+
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    border: none;
+    background-color: #CE967B;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Seccion de pie de pagina*/
+footer{
+
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #363232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h2{
+
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo-2{
+
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.socialmedia, .footer-menu-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icono{
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #F9FAFC;
+    background-image:url(img/bxl-instagram-alt.svg);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icono:hover{
+
+    background-color: #000000;
+    filter: invert(1);
+}
+
+.social-icono:nth-of-type(2){ /*seleccionará el segundo elemento <a> con la clase "social-icono"*/
+
+    background-image: url(img/bxl-facebook-square.svg);
+}
+
+.social-icono:nth-of-type(3){
+
+    background-image: url(img/bxl-twitter.svg);
+}
+
+
+.footer-menu-container{
+
+    list-style-type: none;
+    color: #F9FAFC;
+    font-size: 18px;
+}
+
+.menu-item{
+
+    margin:1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+
+    opacity: 1;
+}
+
+.copyright{
+
+    color: #F9FAFC;
+    opacity: 0.3;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------iniciar sesion---------------------------------------------------------------------*/
+
+
+.formu{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/33.png) no-repeat;
+    background-size: cover;
+    background-repeat: center;
+}
+
+.formulario{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(252, 252, 252, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 1rem rgba(231, 231, 231, 0.2);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.formulario h1{
+    text-align: center;
+    color: #fff;
+    padding: 0 0 20px 0 ;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+    
+}
+
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.Contraseña input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 17px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+
+.recordar{
+    margin:3px 0 20px 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.recordar:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height:  50px;
+    border: 1px solid;
+    background: #CE967B;
+    border-radius: 25px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #CE967B;
+    transition: .5s;
+
+}
+
+.registrarse{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.registrarse a{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+   color: #CE967B;
+   text-decoration: none; 
+}
+.registrarse a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------registro------------------------------------------------------------------------------------*/
+
+.formregistro{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/32.png) no-repeat;
+    background-size: cover;
+    background-repeat: center;
+} 
+
+.formregis{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(252, 252, 252, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 1rem rgba(231, 231, 231, 0.2);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.formregis h4{
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    padding: 0 0 20px 0 ;
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+}
+
+.controls{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 17px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid rgb(240, 240, 240);
+
+}
+
+.formregis p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.formregis a{
+    color: #CE967B;
+    text-decoration: none;
+}
+.formregis a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.formregis .botons{
+    width: 100%;
+    background: #CE967B;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+    
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Descripcion del producto */
+
+.headeer {
+
+    background-image: linear-gradient(
+        rgba(75, 72, 72, 0.7),
+        rgba(80, 83, 43, 0.7));          /*Nos ayuda a ponerle un color obscuro a las imagenes*/
+    background-position: center bottom;        /*Centrar la imagen*/
+    background-repeat: no-repeat;              /*No se repita la imagen de fondo*/
+    background-size: cover;                    /*Cubre todo el ancho y altura*/
+    min-height: 10vh;                          /*Tamaño del header*/
+    display: flex;                             
+    align-items: center;                       /*Centra todo el contenido*/
+}
+.cuerpoo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(100deg,#8f6f3f,#e7e6e6e3 58%, #e7e6e6e3 58%, #7a5845c9 100%); 
+    font-family: 'Poppoins';
+ }
+.card{
+    display: flex;
+    align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+.card:hover{
+    width: 600px;
+}
+.card .imgBox{
+    position: relative;
+    min-width: 300px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.card:hover .imgBox{
+    transform: rotate(-5deg);
+}
+.card .imgBox img{
+    width: 85%;
+}
+.card .details{
+    position: relative;
+    min-width: 300px;
+    background: #a58972e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+}
+.card .details::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #fff;
+}
+.card .details .title small{
+    font-weight: 200;
+    font-size: 0.8rem;
+
+}
+.card .details h4{
+    font-size:  0.9rem;
+}
+.card .details .description p{
+    font-size: 0.8em;
+    font-weight: 200;
+
+}
+.card .details .size ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.card .details .size ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    border: solid 1px #fff;
+    padding: 0.9em;
+}
+.card .details .size  ul li:hover{
+    background-color: #f7f3ef;
+    color: #050104;
+}
+.card .details .buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .details .buy .price {
+    font-size: 1.6em;
+}
+.card .details .buy .btn{
+    background: #fff;
+    padding: 0.5em 0.8em;
+    text-transform: uppercase;
+   
+}
+.card .details .buy .btn a  {
+  text-decoration: none;
+  color: #CE967B; 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Parte responsiva*/
+
+@media(max-width:991px){
+
+    .menu{
+
+        padding: 30px;
+    }
+
+    .menu label{
+
+        display: initial;
+    }
+
+    .menu .navbar{
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+
+        display: initial;
+    }
+
+    .header{
+
+        min-height: 0vh;
+    }
+
+    .header-content{
+
+        padding: 100px 30px;
+    }
+    
+    .header-content p{
+
+        padding: 0;
+    }
+
+    .artistas{
+
+        padding: 30px; 
+    }
+
+    .artistas-content h2{
+
+        padding: 0;
+    }
+
+    .txt-p{
+
+        padding: 0;
+    }
+
+    .artistas-grupo{
+
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .artistas-img{
+
+        display: none;
+    }
+
+    .servicios{
+
+        padding: 30px;
+    }
+
+    .servicios-content p{
+
+        padding: 0;
+    }
+
+    .servicios-grupo{
+
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .servicios-1{
+
+        margin-bottom: 25px; 
+    }
+
+    .servicios-2{
+
+        margin-bottom: 25px; 
+    }
+
+    .obras{
+
+        flex-direction: column;
+    }
+
+    .obras-1{
+
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .obras-2, .obras-3{
+
+        display:none;
+    }
+
+    .contactos{
+
+        padding: 30px;
+    }
+
+    .tacto-content{
+
+        flex-direction: column;
+    }
+
+    .tacto-1{
+
+        padding: 0;
+    }
+
+    .galeria-2{
+        display:none;
+    }
+
+    .imagen1{
+
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/*Paginas de los artistas-remedios*/
+
+.header3 {
+
+    background-image: linear-gradient(
+        rgba(75, 72, 72, 0.7),
+        rgba(66, 66, 65, 0.7)),           /*Nos ayuda a ponerle un color obscuro a las imagenes*/
+        url(img/remedios-varo-1.png);
+    background-position: center bottom;        /*Centrar la imagen*/
+    background-repeat: no-repeat;              /*No se repita la imagen de fondo*/
+    background-size: cover;                    /*Cubre todo el ancho y altura*/
+    min-height: 50vh;                          /*Tamaño del header*/
+    display: flex;                             
+    align-items: center;                       /*Centra todo el contenido*/
+}
+
+.obras-4{
+
+    background-image:url(img/varo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.servicios-3 {
+
+    background-image: linear-gradient(
+        rgba(75, 72, 72, 0.7),
+        rgba(80, 83, 43, 0.7)),          /*Nos ayuda a ponerle un color obscuro a las imagenes*/
+        url(img/remedios.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+
+.imagen1 img{
+
+    max-width: 80%; /* Ancho máximo de la imagen */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    align-items: center;
+}
+
+.header4 {
+
+    background-image: linear-gradient(
+        rgba(75, 72, 72, 0.7),
+        rgba(66, 66, 65, 0.7)),           /*Nos ayuda a ponerle un color obscuro a las imagenes*/
+        url(img/dali.jfif);
+    background-position: center bottom;        /*Centrar la imagen*/
+    background-repeat: no-repeat;              /*No se repita la imagen de fondo*/
+    background-size: cover;                    /*Cubre todo el ancho y altura*/
+    min-height: 50vh;                          /*Tamaño del header*/
+    display: flex;                             
+    align-items: center;                       /*Centra todo el contenido*/
+}
+
+.obras-5{
+
+    background-image:url(img/dali2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.servicios-4 {
+
+    background-image: linear-gradient(
+        rgba(31, 30, 30, 0.7),
+        rgba(219, 219, 217, 0.7)),          /*Nos ayuda a ponerle un color obscuro a las imagenes*/
+        url(img/reloh.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: cover;
+        background-attachment: fixed;
+}
